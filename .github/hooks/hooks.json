@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "echo '✨ sessionStart'",
+        "timeoutSec": 10
+      }
+    ],
+    "userPromptSubmitted": [
+      {
+        "type": "command",
+        "bash": "echo '👇 userPromptSubmitted'",
+        "timeoutSec": 10
+      }
+    ],
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "echo '🫷preToolUse'",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "echo '🫸 postToolUse'",
+        "timeoutSec": 10
+      }
+    ],
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "echo '⛔ agentStop'",
+        "timeoutSec": 5
+      }
+    ],
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "echo '✋ sessionEnd'",
+        "timeoutSec": 60
+      }
+    ],
+    "errorOccurred": [
+      {
+        "type": "command",
+        "bash": "echo '🔴 errorOccurred'",
+        "timeoutSec": 60
+      }
+    ]
+  }
+}
