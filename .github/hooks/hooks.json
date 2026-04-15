@@ -49,6 +49,13 @@
         "bash": "echo '🔴 errorOccurred'",
         "timeoutSec": 60
       }
+    ],
+    "notification": [
+      {
+        "type": "command",
+        "bash": "echo '📣 Notification'",
+        "timeoutSec": 5
+      }
     ]
   }
 }
